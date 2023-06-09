@@ -1,0 +1,124 @@
+@import url("variables.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin     : 0 auto;
+    padding    : 0;
+    box-sizing : border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    min-height: calc(100vh - var(--footer-height));
+}
+
+
+
+body {
+    background-color: var(--color-2);
+}
+
+#container-1 {
+    background-color: gainsboro;
+    padding-top     : var(--navbar-height);
+    padding-left    : var(--padding-side);
+    padding-right   : var(--padding-side);
+    padding-bottom  : 20px;
+    max-width       : calc(var(--content-width));
+}
+
+
+.content-1 {
+    background-color: cadetblue;
+    padding         : var(--content-padding-top-bottom) var(--content-padding-side);
+    border-width    : var(--border-width-1);
+    border-radius   : var(--border-radius-1);
+}
+
+@media all and (max-width: 900px) {
+    .content-1 {
+        padding: 10px;
+    }
+
+}
+
+.point-1 {
+    background-color: antiquewhite;
+    margin-bottom   : var(--margin-bottom);
+    border-width    : var(--border-width-1);
+    border-radius   : var(--border-radius-1);
+}
+
+.point-1 p {
+    padding: 10px 0;
+}
+
+
+
+
+.button {
+    background         : rgb(192, 192, 192);
+    cursor             : pointer;
+    padding            : 10px 15px;
+    border             : 0;
+    margin-top         : 50px;
+    border-radius      : 2px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background: #fff;
+}
+
+.button a {
+    font-size      : 15px;
+    text-decoration: none;
+    text-transform : uppercase;
+    color          : #000;
+}
+
+#button {
+    padding: var(--padding2);
+    display: flex;
+}
+
+
+
+main {
+    padding-top: calc(var(--navbar-height) * 1.5);
+}
+
+#content-wrapper {
+    display       : flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    width  : 100%;
+    padding: 50px var(--padding-side);
+}
+
+
+.section-wrapper {
+    max-width: calc(var(--content-width) * 0.9);
+}
+
+h1 {
+    font-size    : 44px;
+    color        : var(--color-1);
+    margin-bottom: 20px;
+}
+
+@media all and (max-width: 410px) {
+    h1 {
+        font-size: 35px;
+    }
+}
+
+h2 {
+    font-size: 18px;
+}

@@ -1,0 +1,157 @@
+@import url("variables.css");
+
+@keyframes moveDown {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes moveUp {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: -100px;
+    }
+}
+
+#navbar {
+    position  : fixed;
+    width     : 100%;
+    transition: top 0.1s;
+    padding   : 0 var(--padding-side);
+    background: var(--color-9);
+    z-index   : 9999;
+}
+
+#navbar ul {
+    list-style: none;
+    display   : flex;
+    flex-wrap : wrap;
+    max-width : var(--content-width);
+}
+
+nav ul li.items {
+    position   : relative;
+    margin     : 0 15px;
+    text-align : center;
+    order      : 3;
+    display    : flex;
+    align-items: center;
+}
+
+@media all and (max-width: 900px) {
+    nav ul li {
+        padding: 15px 0;
+    }
+
+    #cButton {
+        padding-bottom: 30px;
+    }
+
+    nav ul li.items {
+        width  : 100%;
+        display: none;
+        margin : 0;
+    }
+
+    nav ul li.items.show {
+        display: block;
+    }
+
+    nav ul li.items:hover {
+        border-radius: 3px;
+        box-shadow   : inset 0 0 5px #6d7474, inset 0 0 10px var(--color-5);
+    }
+
+    #cButton.items:hover {
+        box-shadow: none;
+    }
+}
+
+nav ul li.items:after {
+    position  : absolute;
+    content   : '';
+    bottom    : 5px;
+    height    : 2px;
+    width     : 100%;
+    opacity   : 0;
+    transition: all 0.2s linear;
+}
+
+nav ul li.items:hover:after {
+    opacity: 1;
+    bottom : 15px;
+}
+
+#cButton.items:hover:after {
+    opacity: 0;
+}
+
+
+@media all and (max-width: 900px) {
+    nav ul li.items:hover:after {
+        opacity: 0;
+    }
+}
+
+.boxed {
+    background         : rgb(195, 179, 162);
+    cursor             : pointer;
+    padding            : 5px 15px;
+    border             : none;
+    border-radius      : 2px;
+    transition-duration: 0.4s;
+}
+
+.boxed:hover {
+    background: #fff;
+}
+
+.boxed a {
+    color: #000;
+}
+
+nav ul li.logo {
+    flex   : 1;
+    padding: 20px 0px;
+}
+
+nav ul li.logo img {
+    width: 130px;
+}
+
+nav ul li a {
+    color          : white;
+    font-size      : 18px;
+    text-decoration: none;
+    transition     : .4s;
+}
+
+nav ul li:hover a {
+    color: var(--color-5);
+}
+
+nav ul li i {
+    font-size: 25px;
+}
+
+nav ul li.hamburger {
+    display: none;
+    padding: 20px 0;
+}
+
+@media all and (max-width: 900px) {
+    nav ul li.hamburger {
+        display: block;
+    }
+}
+
+nav ul li.hamburger.hide i:before {
+    content: '\f00d';
+}

@@ -1,0 +1,274 @@
+@import url("variables.css");
+
+body {
+    color: #fff;
+}
+
+main {
+    padding: 0;
+}
+
+h1 {
+    color: #fff;
+}
+
+#bg-image {
+    background-color     : #fff;
+    background-image     : linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/banner3.jpg');
+    background-blend-mode: luminosity;
+    background-size      : cover;
+    background-position  : center;
+    height               : 100vh;
+    animation            : fadein 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#welcome-banner {
+    text-align : center;
+    padding-top: 300px;
+}
+
+@media all and (max-width: 900px) {
+    #welcome-banner {
+        text-align : center;
+        padding-top: 200px;
+    }
+}
+
+#welcome-banner.narrative {
+    display: flex;
+}
+
+#welcome-banner .side-placeholder {
+    flex-grow: 1;
+}
+
+#welcome-banner h1 {
+    font-size    : 70px;
+    margin-bottom: 20px;
+}
+
+@media all and (max-width: 900px) {
+    #welcome-banner h1 {
+        font-size: 40px;
+        padding  : 0 50px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #welcome-banner h1 {
+        font-size: 35px;
+        padding  : 0;
+    }
+}
+
+#welcome-banner .narrative p {
+    font-size: 20px;
+    padding  : 10px 50px;
+    max-width: 400px;
+}
+
+@media all and (max-width: 900px) {
+    #welcome-banner .narrative p {
+        font-size: 18px;
+        padding  : 10px 60px;
+    }
+}
+
+#welcome-banner .angle-down i {
+    margin-top: 20px;
+    font-size : 25px;
+    color     : white;
+    transition: .4s;
+}
+
+
+@media all and (max-width: 900px) {
+    #welcome-banner .angle-down i {
+        font-size: 20px;
+    }
+}
+
+#welcome-banner .angle-down i:hover {
+    color: var(--color-5);
+}
+
+.feature {
+    text-align      : center;
+    padding         : var(--padding1);
+    background-image: linear-gradient(rgb(32, 32, 32), rgb(80, 80, 80));
+}
+
+.feature .narrative {
+    display: flex;
+}
+
+.feature .side-placeholder {
+    flex-grow: 1;
+}
+
+.feature .content {
+    max-width  : 400px;
+    line-height: 25px;
+}
+
+.feature h1 {
+    padding      : 0 50px;
+    font-size    : 30px;
+    margin-bottom: 50px;
+}
+
+.feature p {
+    font-size: 18px;
+    padding  : 10px 50px;
+}
+
+#about {
+    padding-bottom: 10px;
+}
+
+#services {
+    display        : flex;
+    flex-wrap      : wrap;
+    align-items    : center;
+    justify-content: center;
+    padding        : 0 40px;
+    padding-bottom : 30px;
+}
+
+#services li {
+    list-style   : none;
+    font-size    : 18px;
+    margin       : var(--margin1);
+    padding      : 30px;
+    border-style : solid;
+    border-width : 2px;
+    border-radius: 2px;
+    width        : 210px;
+    background   : var(--color-7);
+}
+
+#experience {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+@media all and (max-width: 800px) {
+    #experience {
+        flex-direction: column;
+    }
+}
+
+#experience ul {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    width         : 250px;
+    height        : 230px;
+}
+
+#experience li {
+    list-style     : none;
+    margin         : var(--margin1);
+    justify-content: center;
+    align-items    : center;
+}
+
+@media all and (max-width: 800px) {
+    #experience li {
+        margin: 10px;
+    }
+}
+
+.value {
+    display      : flex;
+    width        : 100px;
+    height       : 100px;
+    padding      : 70px 70px;
+    border-radius: 50%;
+    font-size    : 30px;
+    border-style : solid;
+    border-width : 2px;
+    color        : white;
+    background   : var(--color-7);
+}
+
+.name {
+    font-size: 20px;
+}
+
+#clients-cont {
+    display        : flex;
+    justify-content: center;
+}
+
+#clients {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    padding        : 0px 40px;
+    max-width      : 800px;
+    margin         : var(--margin1);
+}
+
+#clients li {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    font-size      : 18px;
+    margin         : 15px 20px;
+    border-style   : solid;
+    border-width   : 2px;
+    border-radius  : 2px;
+    width          : 150px;
+    height         : 150px;
+    border-color   : #fff;
+}
+
+#clients li img {
+    width: 80%;
+}
+
+#help-cont {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+#help-cont p {
+    margin-top: 30px;
+}
+
+#help {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    max-width      : 800px;
+    margin         : var(--margin1);
+}
+
+#help li {
+    display      : flex;
+    font-size    : 17px;
+    margin       : 15px 20px;
+    border-style : solid;
+    border-width : 2px;
+    border-radius: 2px;
+    width        : 250px;
+    height       : 140px;
+    border-color : white;
+    background   : var(--color-7);
+    padding-top  : 35px;
+    padding-left : 30px;
+    padding-right: 30px;
+}

@@ -1,0 +1,98 @@
+@import url("variables.css");
+
+#header {
+    background-color: var(--color-2);
+    padding-top     : 0;
+    padding-bottom  : 0;
+}
+
+#first {
+    background-color: var(--color-3);
+}
+
+#closing {
+    background-color: var(--color-2);
+}
+
+.cont-1 {
+    display       : flex;
+    flex-direction: row;
+    row-gap       : 20px;
+    column-gap    : 50px;
+    padding       : 10px;
+    border-radius : 4px;
+}
+
+@media all and (max-width: 1100px) {
+    .cont-1 {
+        flex-direction: column;
+    }
+}
+
+.left {
+    flex          : 1;
+    display       : flex;
+    flex-direction: column;
+    gap           : 20px;
+    border-radius : 4px;
+}
+
+.left p {
+    width: 100%;
+}
+
+.right-1 {
+    background-color: var(--color-8);
+    flex            : 2;
+    display         : flex;
+    gap             : 10px;
+    padding         : 10px;
+    border-radius   : 4px;
+}
+
+@media all and (max-width: 700px) {
+    .right-1 {
+        flex-direction: column;
+    }
+}
+
+.cont-2 {
+    flex: 1;
+}
+
+@media all and (max-width: 700px) {
+    .cont-2 {
+        width: 100%;
+    }
+}
+
+.head-1 {
+    border-style   : solid;
+    border-radius  : 4px;
+    border-color   : var(--color-1);
+    height         : 60px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    text-align     : center;
+    padding        : 0 10px;
+}
+
+.body-1 {
+    padding-top   : 15px;
+    padding-right : 15px;
+    padding-bottom: 10px;
+}
+
+.fali-1 {
+    font-style: italic;
+}
+
+.fali-2 {
+    color: var(--color-1);
+}
+
+.decifer-1 {
+    padding-top  : 5px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,275 @@
+section {
+    padding: 0 var(--padding-side);
+}
+
+#header {
+    padding-bottom: 0;
+}
+
+#head {
+    display       : flex;
+    flex-direction: column;
+    gap           : 20px;
+}
+
+#head>* {
+    margin         : 0;
+    justify-content: flex-start;
+    max-width      : 700px;
+}
+
+@media all and (max-width: 620px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 410px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+.author-date {
+    display       : flex;
+    padding-bottom: 30px;
+}
+
+@media all and (max-width: 410px) {
+    .author-date {
+        flex-direction: column;
+    }
+}
+
+.author-date>* {
+    margin   : 0;
+    font-size: 15px;
+}
+
+@media all and (max-width: 410px) {
+    .author-date>* {
+        font-size: 13px;
+    }
+}
+
+.author {
+    padding-right: 15px;
+}
+
+@media all and (max-width: 410px) {
+    .author {
+        font-weight: bold;
+    }
+}
+
+.date {
+    border-left : 3px solid var(--color-4);
+    padding-left: 15px;
+}
+
+@media all and (max-width: 410px) {
+    .date {
+        border-left : unset;
+        padding-left: unset;
+        padding-top : 10px;
+    }
+}
+
+#first {
+    background-color: var(--color-3);
+}
+
+#closing {
+    background-color: var(--color-3);
+}
+
+.article {
+    background-color: var(--color-8);
+    display         : flex;
+    justify-content : flex-start;
+    flex-direction  : column;
+    gap             : 15px;
+    margin          : 0;
+    padding         : 10px 20px 30px 20px;
+}
+
+.article>* {
+    margin         : 0;
+    justify-content: flex-start;
+    max-width      : 600px;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+    color        : var(--color-9);
+    font-size    : 20px;
+    font-weight  : 550;
+}
+
+@media all and (max-width: 410px) {
+    .subtitle {
+        font-size: 16px;
+    }
+}
+
+.illustr {
+    margin-top: 10px;
+}
+
+.illustr img {
+    width        : 100%;
+    border-radius: 0.5%;
+}
+
+.credit {
+    font-size  : x-small;
+    color      : dimgray;
+    margin-left: 5px;
+}
+
+.credit a {
+    text-decoration: none;
+    color          : unset;
+    font-style     : unset;
+}
+
+.credit::after {
+    content    : '\f35d';
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+}
+
+.credit a:hover {
+    text-decoration: underline;
+    transition     : 0.3s;
+}
+
+.abstract {
+    display       : flex;
+    flex-direction: column;
+    gap           : 15px;
+    margin-top    : 10px;
+}
+
+@media all and (max-width: 410px) {
+    .abstract p {
+        font-size: 14px;
+    }
+}
+
+.abstract>* {
+    margin: 0px;
+}
+
+#kw {
+    margin-top   : 10px;
+    margin-bottom: 20px;
+}
+
+@media all and (max-width: 410px) {
+    #kw {
+        font-size: 14px;
+    }
+}
+
+hr.divider {
+    border: 1px solid var(--color-5);
+}
+
+#links {
+    display: inline-flex;
+}
+
+@media all and (max-width: 470px) {
+    #links {
+        flex-direction: column;
+    }
+}
+
+.lb {
+    margin    : 5px;
+    padding   : 5px;
+    text-align: center;
+}
+
+.lb li {
+    margin : 0px;
+    padding: 5px;
+}
+
+.lb-head {
+    border-bottom      : 2px;
+    border-bottom-style: solid;
+    border-color       : var(--color-4);
+    font-size          : 15px;
+    font-weight        : bold;
+}
+
+.lb-content {
+    display        : flex;
+    font-size      : 30px;
+    justify-content: center;
+}
+
+.lb-content a {
+    color: gray;
+}
+
+.lb-content-dl {
+    font-family: "Font Awesome 5 free";
+}
+
+.lb-content-link {
+    font-family    : "Font Awesome 5 Brands";
+    text-decoration: none;
+}
+
+.lb-content a:hover {
+    color      : var(--color-1);
+    font-weight: 900;
+    transition : 0.3s;
+}
+
+#pdf-article::before {
+    content: '\f1c1';
+}
+
+#xls-models::before {
+    content: '\f1c3';
+}
+
+#linkedin::before {
+    content: '\f0e1';
+}
+
+#linkedin:hover::before {
+    content: '\f08c';
+}
+
+#medium::before {
+    content: '\f3c7';
+}
+
+#medium:hover::before {
+    content: '\f23a';
+}
+
+
+@media all and (max-width: 270px) {
+    .lb-content {
+        flex-direction: column;
+    }
+}
+
+.lb-content li {
+    margin-top: 5px;
+}
+
+.lb-ext {
+    font-size  : smaller;
+    font-weight: bolder;
+}
+
+p .kw {
+    font-style: italic;
+}

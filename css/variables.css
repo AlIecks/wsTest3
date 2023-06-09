@@ -1,0 +1,25 @@
+:root {
+    --margin1                   : 10px 10px;
+    --padding1                  : 150px 0;
+    --padding2                  : 0 0 150px 0;
+    --padding-side              : 40px;
+    --content-padding-side      : 60px;
+    --content-padding-top-bottom: 50px;
+    --footer-height             : 150px;
+    --navbar-height             : 100px;
+    --margin-bottom             : 30px;
+    --content-width             : 1200px;
+    --column-width-1            : 350px;
+    --column-width-2            : 300px;
+    --border-width-1            : 4px;
+    --border-radius-1           : 4px;
+    --color-1                   : rgb(155, 28, 60);
+    --color-2                   : rgb(207, 210, 205);
+    --color-3                   : rgb(229, 230, 228);
+    --color-4                   : rgb(39, 76, 119);
+    --color-5                   : rgb(251, 139, 36);
+    --color-6                   : rgb(162, 210, 255);
+    --color-7                   : rgb(195, 179, 162);
+    --color-8                   : rgb(231, 236, 239);
+    --color-9                   : rgba(46, 46, 46, 0.95);
+}

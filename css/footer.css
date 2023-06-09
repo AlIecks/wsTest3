@@ -1,0 +1,62 @@
+@import url("variables.css");
+
+:root {
+    --padding-footer: 5px 10px;
+}
+
+
+#footer {
+    background: var(--color-9);
+    padding   : 20px 40px;
+    height    : var(--footer-height);
+    color     : #fff;
+}
+
+#footer-content {
+    display      : flex;
+    flex-wrap    : wrap;
+    list-style   : none;
+    font-size    : 14px;
+    max-width    : var(--content-width);
+    border-width : var(--border-width-1);
+    border-radius: var(--border-radius-1);
+}
+
+#copyright {
+    flex-grow    : 12;
+    padding      : var(--padding-footer);
+    border-width : 2px;
+    border-color : #fff;
+    white-space  : nowrap;
+    border-width : var(--border-width-1);
+    border-radius: var(--border-radius-1);
+}
+
+#quick-contact {
+    flex-grow    : 1;
+    padding      : var(--padding-footer);
+    white-space  : nowrap;
+    border-width : 2px;
+    border-color : #fff;
+    line-height  : 25px;
+    border-width : var(--border-width-1);
+    border-radius: var(--border-radius-1);
+}
+
+#quick-contact li span {
+    font-size: 16px;
+}
+
+.em-space {
+    display: inline-block;
+    width  : 7px;
+}
+
+#quick-contact a {
+    text-decoration: none;
+    color          : var(--color-6);
+}
+
+#quick-contact a:hover {
+    color: var(--color-5);
+}

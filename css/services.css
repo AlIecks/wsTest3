@@ -1,0 +1,178 @@
+@import url("variables.css");
+
+#header {
+    background-color: var(--color-2);
+    padding-top     : 0;
+    padding-bottom  : 0;
+}
+
+#first {
+    background-color: var(--color-3);
+}
+
+#second {
+    background-color: var(--color-2);
+}
+
+#closing {
+    background-color: var(--color-3);
+}
+
+.cont-1 {
+    display   : flex;
+    row-gap   : 20px;
+    column-gap: 50px;
+    padding   : 10px 0;
+}
+
+@media all and (max-width: 700px) {
+    .cont-1 {
+        flex-direction: column;
+    }
+}
+
+.left {
+    flex          : 1;
+    padding       : 0 10px;
+    display       : flex;
+    flex-direction: column;
+    gap           : 20px;
+    margin        : 0;
+}
+
+.left p {
+    width: 100%;
+}
+
+.right-1 {
+    background-color: var(--color-8);
+    flex            : 2;
+    display         : flex;
+    gap             : 10px;
+    padding         : 10px;
+    border-radius   : 4px;
+}
+
+@media all and (max-width: 500px) {
+    .right-1 {
+        flex-direction: column;
+    }
+}
+
+.cont-2 {
+    flex: 1;
+}
+
+.cont-2>* {
+    margin: 0;
+}
+
+.head-1 {
+    border-style   : solid;
+    border-radius  : 4px;
+    border-color   : var(--color-1);
+    height         : 40px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.body-1 {
+    padding-top   : 15px;
+    padding-right : 15px;
+    padding-bottom: 10px;
+}
+
+.fali-1 {
+    font-style: italic;
+}
+
+.fali-2 {
+    color: var(--color-1);
+}
+
+.decifer-1 {
+    padding-top  : 5px;
+    margin-bottom: 30px;
+}
+
+.right-2 {
+    background-color: var(--color-8);
+    flex            : 2;
+    display         : flex;
+    flex-direction  : column;
+    gap             : 10px;
+    padding         : 10px;
+    border-radius   : 4px;
+}
+
+.right-2>ul {
+    margin: 0;
+}
+
+.cont-3 {
+    display: flex;
+    gap    : 10px;
+}
+
+.cont-3>* {
+    margin: 0;
+}
+
+@media all and (max-width: 700px) {
+    .cont-3 {
+        flex-direction: column;
+        gap           : 5px;
+    }
+}
+
+.head-2 {
+    border-style : solid;
+    border-radius: 4px;
+    border-color : var(--color-1);
+    height       : 60px;
+    width        : 170px;
+    display      : flex;
+    align-items  : center;
+    padding-right: 10px;
+
+}
+
+@media all and (max-width: 700px) {
+    .head-2 {
+        width: unset;
+    }
+}
+
+.body-2 {
+    border-radius: 4px;
+    display      : flex;
+    flex         : 1;
+    align-items  : center;
+    padding      : 5px 10px;
+}
+
+@media all and (max-width: 660px) {
+    .body-2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 660px) {
+    .faul {
+        height : 50px;
+        display: flex;
+    }
+}
+
+.fali-3 {
+    padding-left: 5px;
+    display     : flex;
+    align-items : center;
+}
+
+@media all and (max-width: 1030px) {
+    #two {
+        flex-direction: column;
+    }
+}
